@@ -17,6 +17,7 @@ const pets: string[] = [
     "/photos/nani1.jpg",
     "/photos/dog1.jpg",
     "/photos/cat.jpg",
+    "/photos/dog2.jpg",
     "/photos/nani2.jpg",
 ]
 

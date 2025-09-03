@@ -8,7 +8,7 @@ import { ArrowRight } from 'lucide-react';
 
 const HeroSection = () => {
     return (
-        <div id='home' className="min-h-[110vh] flex items-center justify-center px-4 sm:px-6 lg:px-8 overflow-hidden">
+        <div id='home' className="min-h-[70vh] md:min-h-[75vh] lg:min-h-[90vh] flex items-center justify-center px-4 sm:px-6 lg:px-8 overflow-hidden">
             <div className="max-w-7xl mx-auto">
                 <div className=' grid lg:grid-cols-2 gap-12 items-center'>
 
@@ -20,7 +20,7 @@ const HeroSection = () => {
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.6, delay: 0.4 }}
-                        className='text-center lg:text-left'
+                        className='text-center x2l:text-left'
                     >
                         <h1 className='text-4xl md:text-6xl lg:text-7xl font-serif font bold text-foreground leading-tight mb-6'>Framing Life <span className='text-primary italic'> Through Lenses</span></h1>
                         <p className=' text-xl md:text-2xl text-muted-foreground mb-8 max-w-2xl'>
@@ -45,9 +45,9 @@ const HeroSection = () => {
                         whileInView={{ opacity: 1, scale: 1 }}
                         transition={{ duration: .8, delay: .4 }}>
                         <div className='relative'>
-                            <div className=' w-80 h-80 bg-gradient-to-br from-primary/20 to-secondary/20 rounded-full blur-3xl absolute -top-10 -right-10 hidden md:block'>
+                            <div className=' w-80 h-80 bg-gradient-to-br from-primary/20 to-secondary/20 rounded-full blur-3xl absolute -top-10 -right-10 hidden lg:block'>
                             </div>
-                            <div className="flex justify-center md:justify-start">
+                            <div className="flex justify-center xl:justify-start">
                                 <div className="relative w-60 md:w-110 h-60 md:h-96 ">
                                     <Image
                                         src="/my-pic.jpg"
