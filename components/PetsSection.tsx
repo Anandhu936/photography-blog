@@ -15,9 +15,9 @@ import { motion } from "framer-motion"
 const pets: string[] = [
     "/photos/cat2.jpg",
     "/photos/nani1.jpg",
-    "/photos/dog1.jpg",
+    "/photos/toby1.jpg",
     "/photos/cat.jpg",
-    "/photos/dog2.jpg",
+    "/photos/toby2.jpg",
     "/photos/nani2.jpg",
 ]
 
