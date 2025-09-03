@@ -13,6 +13,12 @@ import {
 import { motion } from "framer-motion"
 
 const portraits: string[] = [
+    "/photos/ammu13.jpg",
+    "/photos/arya6.jpg",
+    "/photos/ammu15.jpg",
+    "/photos/arya7.jpg",
+    "/photos/ammu14.jpg",
+    "/photos/arya8.jpg",
     "/photos/ammu9.jpg",
     "/photos/arya5.jpg",
     "/photos/ammu11.jpg",
@@ -20,7 +26,6 @@ const portraits: string[] = [
     "/photos/ammu10.jpg",
     "/photos/family1.jpg",
     "/photos/ammu12.jpg",
-    "/photos/arya3.jpg",
     "/photos/ammu8.jpg",
     "/photos/ammu7.jpg",
     "/photos/ammu.jpg",
