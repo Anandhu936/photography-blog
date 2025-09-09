@@ -38,9 +38,7 @@ const categories: Record<string, string[]> = {
         "/photos/sky.jpg",
     ],
     Macro: [
-        "/photos/flower.jpg",
-        "/photos/pumpkin.jpg",
-        "/photos/urumabazham.jpg",
+        "/photos/ammu5.jpg",
 
     ],
     Pets: [
