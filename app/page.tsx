@@ -4,7 +4,6 @@ import HeroSection from "../components/HeroSection";
 import ContactSection from "../components/ContactSection";
 import HeroImageSection from "@/components/HeroImageSection";
 import CapturedSection from "@/components/CapturedSection";
-import PetsSection from "@/components/PetsSection";
 import AboutSection from "@/components/AboutSection";
 import { ReviewSection } from "@/components/ReviewSection";
 
