@@ -17,7 +17,6 @@ export default function Home() {
         <HeroSection />
         <AboutSection />
         <CapturedSection />
-        <PetsSection />
         <ReviewSection />
         <ContactSection />
       </main>

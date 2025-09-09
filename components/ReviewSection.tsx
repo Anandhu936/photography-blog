@@ -34,9 +34,9 @@ export function ReviewSection() {
                             <CarouselItem key={index}>
                                 {/* Animate each card individually */}
                                 <motion.div
-                                    initial={{ opacity: 0, y: 20 }}
+                                    initial={{ opacity: 0, y: 1 }}
                                     whileInView={{ opacity: 1, y: 0 }}
-                                    transition={{ duration: 0.8, delay: 0.1 * index }}
+                                    transition={{ duration: 0.8, delay: 0.4 }}
                                     viewport={{ once: true, amount: 0.3 }}
                                     className="p-2"
                                 >
