@@ -1,6 +1,7 @@
-"use client"
+"use client";
+
 import * as React from "react";
-import Image from "next/image";
+import { motion } from "framer-motion";
 import { Card, CardContent } from "../components/ui/card";
 import {
     Carousel,
@@ -11,21 +12,37 @@ import {
 } from "../components/ui/carousel";
 import { ReviewItems } from "@/lib/constants";
 import RatingStars from "./RatingStars";
+import Image from "next/image";
 
 export function ReviewSection() {
     return (
-        <div>
-            <h2 className="text-center text-2xl md:text-3xl lg:text-5xl font-serif font-medium italic mb-6 lg:mb-10">What People Are Saying</h2>
-            <div className="flex justify-center mx-[5%] lg:mx-0 p-2 ">
+        <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.4 }}
+            viewport={{ once: false, amount: 0.3 }}
+            className="py-10"
+        >
+            <h2 className="text-center text-2xl md:text-3xl lg:text-5xl font-serif font-medium italic mb-6 lg:mb-10">
+                What People Are Saying
+            </h2>
 
+            <div className="flex justify-center mx-[5%] lg:mx-0 p-2">
                 <Carousel className="w-full max-w-[300px] md:max-w-[600px] lg:max-w-[800px]">
                     <CarouselContent>
                         {ReviewItems.map((item, index) => (
                             <CarouselItem key={index}>
-                                <div className="p-2">
-                                    <Card className="h-full  bg-white dark:bg-gray-900">
-                                        <CardContent className=" flex flex-col items-center text-foreground text-center p-4 gap-4">
-                                            <div className="w-50 h-50 relative rounded-full overflow-hidden">
+                                {/* Animate each card individually */}
+                                <motion.div
+                                    initial={{ opacity: 0, y: 20 }}
+                                    whileInView={{ opacity: 1, y: 0 }}
+                                    transition={{ duration: 0.8, delay: 0.1 * index }}
+                                    viewport={{ once: true, amount: 0.3 }}
+                                    className="p-2"
+                                >
+                                    <Card className="h-full bg-white dark:bg-gray-900 shadow-md">
+                                        <CardContent className="flex flex-col items-center text-foreground text-center p-4 gap-4">
+                                            <div className="w-40 h-40 relative rounded-full overflow-hidden">
                                                 <Image
                                                     src={item.img}
                                                     alt={item.title}
@@ -33,18 +50,16 @@ export function ReviewSection() {
                                                     className="object-cover"
                                                 />
                                             </div>
-                                            <h3 className=" text-[14px] lg:text-lg font-bold">
+                                            <h3 className="text-[14px] lg:text-lg font-bold">
                                                 {item.title}
                                             </h3>
-                                            <p className="text-[12px] lg:text-sm ">
-                                                {item.content}
-                                            </p>
+                                            <p className="text-[12px] lg:text-sm">{item.content}</p>
                                             <div>
                                                 <RatingStars rating={4.5} />
                                             </div>
                                         </CardContent>
                                     </Card>
-                                </div>
+                                </motion.div>
                             </CarouselItem>
                         ))}
                     </CarouselContent>
@@ -52,6 +67,6 @@ export function ReviewSection() {
                     <CarouselNext />
                 </Carousel>
             </div>
-        </div>
+        </motion.div>
     );
 }

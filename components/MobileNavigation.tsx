@@ -23,7 +23,7 @@ export default function MobileNavigation() {
             <SheetContent>
                 <SheetTitle></SheetTitle>
                 <div className="flex flex-col space-y-4 mt-8 p-8">
-                    {navItems.map((item) => (<Link key={item.name} href={item.href} className="text-lg font-medium text-foreground hover:text-primary transition-colors duration-200"
+                    {navItems.map((item) => (<Link key={item.name} href={item.href} className="text-lg font-montserrat font-medium text-foreground hover:text-primary transition-colors duration-200"
                         onClick={() => setIsOpen(false)}
                     >{item.name}</Link>))}
                 </div>

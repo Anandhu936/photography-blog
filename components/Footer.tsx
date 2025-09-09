@@ -11,6 +11,7 @@ export default function Footer() {
                 {/* Navigation */}
                 <nav className="flex space-x-6 text-sm font-medium">
                     <Link href="#home" className="hover:text-primary transition">Home</Link>
+                    <Link href="#about" className="hover:text-primary transition">About</Link>
                     <Link href="#captured-moments" className="hover:text-primary transition">Captured Moments</Link>
                     <Link href="#contact" className="hover:text-primary transition">Contact</Link>
                 </nav>
