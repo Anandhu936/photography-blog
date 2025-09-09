@@ -34,11 +34,12 @@ const categories: Record<string, string[]> = {
     ],
     Landscape: [
         "/photos/nature.jpg",
-        "/photos/ernakulam.jpg",
         "/photos/sky.jpg",
     ],
     Macro: [
-        "/photos/ammu5.jpg",
+        "/photos/flower.jpg",
+        "/photos/pumpkin.jpg",
+        "/photos/urumabazham.jpg",
 
     ],
     Pets: [
