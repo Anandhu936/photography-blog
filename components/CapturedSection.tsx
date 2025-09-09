@@ -35,6 +35,7 @@ const categories: Record<string, string[]> = {
     Landscape: [
         "/photos/nature.jpg",
         "/photos/ernakulam.jpg",
+        "/photos/sky.jpg",
     ],
     Macro: [
         "/photos/flower.jpg",
