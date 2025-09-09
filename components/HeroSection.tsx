@@ -8,11 +8,9 @@ import { ArrowRight } from 'lucide-react';
 
 const HeroSection = () => {
     return (
-        <div id='home' className="min-h-[80vh] sm:min-h-[100vh] md:min-h-[75vh] lg:min-h-[90vh] flex items-center justify-center px-4 sm:px-6 lg:px-8 overflow-hidden">
+        <div id='home' className=" flex items-center justify-center px-4 py-5 lg:py-16 sm:px-6 lg:px-8 overflow-hidden">
             <div className="max-w-7xl mx-auto">
                 <div className=' grid lg:grid-cols-2 gap-12 items-center'>
-
-
 
                     {/* Left side - Image */}
 
@@ -50,7 +48,7 @@ const HeroSection = () => {
                             <div className="flex justify-center xl:justify-start">
                                 <div className="relative w-60 md:w-110 h-60 md:h-96 ">
                                     <Image
-                                        src="/my-pic.jpg"
+                                        src="/photos/hero-photo.jpg"
                                         alt="Profile"
                                         fill
                                         className="object-cover rounded-2xl shadow-2xl  lg:rotate-6"

@@ -12,7 +12,7 @@ export default function Navbar() {
                 <div className="flex justify-between items-center h-20">
                     {/* {logo} */}
                     <div className="flex items-center justify-center">
-                        <h1 className="text-sm lg:text-xl font-serif italic font-bold text-foreground">
+                        <h1 className="text-xl lg:text-4xl font-sacramento font-medium  text-foreground">
                             <span className="md:hidden">Anandhu</span>
                             <span className="hidden md:inline">Anandhu Unnimadhavan</span>
                         </h1>
@@ -20,9 +20,9 @@ export default function Navbar() {
                     </div>
 
                     {/* {desktop navigation} */}
-                    <div className="hidden md:flex items-center space-x-8">
+                    <div className="hidden md:flex   items-center space-x-8">
                         {navItems.map((item) => (
-                            <Link key={item.name} href={item.href} className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors duration-200">{item.name}</Link>
+                            <Link key={item.name} href={item.href} className=" font-montserrat text-sm lg:text-lg font-medium text-muted-foreground hover:text-foreground transition-colors duration-200">{item.name}</Link>
                         ))}
                         <ThemeToggle />
                     </div>

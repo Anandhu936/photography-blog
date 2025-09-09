@@ -42,7 +42,7 @@ const portraits: string[] = [
 
 const CapturedSection = () => {
     return (
-        <div className="" id="captured-moments">
+        <div className="py-5 lg:py-8" id="captured-moments">
             <motion.div initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: .6 }}>
