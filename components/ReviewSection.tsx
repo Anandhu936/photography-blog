@@ -27,8 +27,8 @@ export function ReviewSection() {
                 What People Are Saying
             </h2>
 
-            <div className="flex justify-center mx-[5%] lg:mx-0 p-2">
-                <Carousel className="w-full max-w-[300px] md:max-w-[600px] lg:max-w-[800px]">
+            <div className="flex justify-center mx-[5%] lg:mx-0 py-2 px-0">
+                <Carousel className="w-full max-w-[270px] sm:max-[350px] md:max-w-[600px] lg:max-w-[800px]">
                     <CarouselContent>
                         {ReviewItems.map((item, index) => (
                             <CarouselItem key={index}>
