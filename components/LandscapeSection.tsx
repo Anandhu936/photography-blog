@@ -12,16 +12,12 @@ import {
 
 import { motion } from "framer-motion"
 
-const pets: string[] = [
-    "/photos/cat2.jpg",
-    "/photos/nani1.jpg",
-    "/photos/toby1.jpg",
-    "/photos/cat.jpg",
-    "/photos/toby2.jpg",
-    "/photos/nani2.jpg",
+const landscapes: string[] = [
+    "/photos/nature.jpg",
+    "/photos/sky.jpg",
 ]
 
-const PetsSection = () => {
+const LandscapeSection = () => {
     return (
         <div className="">
 
@@ -30,12 +26,12 @@ const PetsSection = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.6 }}
                 className="w-full max-w-6xl mx-auto py-10">
-                <h2 className="text-lg md:text-2xl  lg:text-4xl font-medium text-center font-montserrat mb-4">Pets</h2>
+                <h2 className="text-lg md:text-2xl  lg:text-4xl font-medium text-center font-montserrat mb-4">Landscape</h2>
                 <div className="w-full flex justify-center">
                     <div className="w-full max-w-[315px] sm:max-w-[400px] md:max-w-[700px] lg:max-w-[1000px]">
                         <Carousel>
                             <CarouselContent>
-                                {pets.map((src, index) => (
+                                {landscapes.map((src, index) => (
                                     <CarouselItem key={index} className="basis-full">
                                         <div className="flex justify-center p-2 sm:p-4">
                                             <div className="overflow-hidden rounded-2xl shadow-xl w-full">
@@ -64,4 +60,4 @@ const PetsSection = () => {
     )
 }
 
-export default PetsSection
+export default LandscapeSection

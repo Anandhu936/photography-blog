@@ -6,6 +6,9 @@ import HeroImageSection from "@/components/HeroImageSection";
 import CapturedSection from "@/components/CapturedSection";
 import AboutSection from "@/components/AboutSection";
 import { ReviewSection } from "@/components/ReviewSection";
+import LandscapeSection from "@/components/LandscapeSection";
+import MacroSection from "@/components/MacroSection";
+import PetsSection from "@/components/PetsSection";
 
 
 export default function Home() {
@@ -16,6 +19,9 @@ export default function Home() {
         <HeroSection />
         <AboutSection />
         <CapturedSection />
+        <LandscapeSection />
+        <MacroSection />
+        <PetsSection />
         <ReviewSection />
         <ContactSection />
       </main>
