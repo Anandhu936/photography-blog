@@ -40,7 +40,7 @@ const LandscapeSection = () => {
                                                     alt={`Pets ${index + 1}`}
                                                     width={1200}
                                                     height={600}
-                                                    className="object-cover w-full h-[250px] sm:h-[350px] md:h-[500px] lg:h-[700px] rounded-2xl"
+                                                    className="object-cover w-full h-[250px] sm:h-[350px] md:h-[500px]  rounded-2xl"
                                                 />
                                             </div>
                                         </div>
